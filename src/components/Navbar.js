@@ -9,19 +9,19 @@ function Navbar() {
   }
 
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between bg-slate-50 pt-3 rounded-b-md">
       <div>
         <h1 className="text-2xl ml-1">Gustavo Garcia</h1>
       </div>
       <div>
-        <button className="" onClick={handleClick}>
+        <button className="mr-2 pb-1" onClick={handleClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 mr-2"
+            className="w-10 h-10"
           >
             <path
               strokeLinecap="round"
@@ -34,8 +34,8 @@ function Navbar() {
         <ul
           className={`${
             showBtn
-              ? "fixed -right-16 "
-              : " transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 absolute right-4"
+              ? "fixed top-14 -right-20 transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5"
+              : " transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 absolute right-0 top-14 py-7 bg-slate-50 px-6 rounded-b-md"
           }`}
         >
           <li>
