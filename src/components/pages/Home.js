@@ -4,7 +4,7 @@ import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-10">
       <div className="flex justify-center">
         <img
           src={picture}
@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="md:w-2/4 md:mx-auto bg-slate-100/60 rounded-xl px-8 py-4 tracking-tight text-center">
-        <p className="text-lg font-mono">
+        <p className="text-sm font-mono">
           Aspiring web developer. Currently enrolled in the SMU Coding Bootcamp.
           I love playing video games and watching sports, mostly soccer. Some of
           my coding skills are Javascript, NodeJS, ReactJS, MongoDB, and Good
@@ -28,7 +28,7 @@ export default function Home() {
           <a
             target="_blank"
             rel="noreferrer"
-            className="nav-link active text-reset text-lg font-medium"
+            className="nav-link active text-reset text-md font-medium"
             href={resume}
           >
             Resume
