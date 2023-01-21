@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showBtn, setBtn] = useState(true);
@@ -11,7 +12,9 @@ function Navbar() {
   return (
     <nav className="flex justify-between bg-slate-50 pt-3 rounded-b-md">
       <div>
-        <h1 className="text-2xl ml-1">Gustavo Garcia</h1>
+        <Link to="/" className="text-2xl ml-1">
+          Gustavo Garcia
+        </Link>
       </div>
       <div>
         <button className="mr-2 pb-1" onClick={handleClick}>
@@ -39,13 +42,13 @@ function Navbar() {
           }`}
         >
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
