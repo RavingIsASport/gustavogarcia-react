@@ -4,17 +4,17 @@ import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 h-screen pt-8">
       <div className="flex justify-center">
         <img
           src={picture}
-          className="w-40 rounded-full mt-4"
+          className="w-40 md:w-56 rounded-full"
           alt="Gustavo Garcia"
         ></img>
       </div>
 
-      <div className="md:w-2/4 md:mx-auto bg-slate-100/60 rounded-xl px-8 py-4 tracking-tight text-center">
-        <p className="text-sm font-mono">
+      <div className="md:w-2/4 md:mx-auto bg-slate-100/60 rounded-xl px-8 py-4 md:px-8 tracking-tight text-center">
+        <p className="text-sm font-mono md:text-base">
           Aspiring web developer. Currently enrolled in the SMU Coding Bootcamp.
           I love playing video games and watching sports, mostly soccer. Some of
           my coding skills are Javascript, NodeJS, ReactJS, MongoDB, and Good
