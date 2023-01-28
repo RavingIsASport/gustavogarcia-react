@@ -31,6 +31,13 @@ let ProjectsData = [
     description: `A simple weather I made to practice the FetchApi to gather data from the Openweather Api and display it on screen. Search any location in the world and it'll get you the current temperature and the forecast.`,
     url: `https://ravingisasport.github.io/WeatherApp/`,
   },
+  {
+    project: require("../projectsImgs/MariposasRanch.png"),
+    name: "Mariposas Ranch",
+    description:
+      "A small website I created for a client to show off and help sell animals right from their ranch. This is my actually the first website I created for a client. This project help me understand React and React-Router which are the technologies I used, as well as Tailwind CSS.",
+    url: `https://www.mariposasranch.com/`,
+  },
 ];
 
 export default ProjectsData;
