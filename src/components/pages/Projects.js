@@ -11,8 +11,8 @@ export default function Projects() {
             <h1 className="text-lg">{data.name}</h1>
             <p className="text-xs">{data.description}</p>
             <div className="my-2">
-              <a href="#" className="text-lime-600 font-bold ">
-                Check Out
+              <a href={data.url} className="text-lime-600 font-bold ">
+                Check It Out
               </a>
             </div>
           </div>

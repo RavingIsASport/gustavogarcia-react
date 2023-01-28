@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="flex justify-between bg-slate-100/50 py-1 rounded-b-md md:py-4">
       <div>
-        <Link to="/" className="text-2xl ml-1">
+        <Link to="/" className="text-2xl ml-1 md:text-3xl">
           Gustavo Garcia
         </Link>
       </div>
