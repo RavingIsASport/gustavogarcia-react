@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/GustavoResume2023.pdf";
+import resume from "../../assets/gustavoresume.pdf";
 import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
@@ -25,12 +25,7 @@ export default function Home() {
           type="button"
           className="m-3 p-2 bg-cyan-600 hover:bg-cyan-300 hover:text-slate-700 rounded-lg text-slate-200"
         >
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="nav-link active text-reset text-md font-medium"
-            href={resume}
-          >
+          <a className="text-md font-medium" href={resume}>
             Resume
           </a>
         </button>
