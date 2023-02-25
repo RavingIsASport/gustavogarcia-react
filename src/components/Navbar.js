@@ -9,10 +9,16 @@ function Navbar() {
     console.log("succes");
   }
 
+  function hidenav() {
+    return showBtn
+      ? "fixed top-14 -right-20 transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 md:static"
+      : " transition-all durantion-1000 ease-in-out text-base flex flex-col absolute right-0 top-12 py-10 bg-slate-100/50 px-7 rounded-b-md";
+  }
+
   return (
     <nav className="flex justify-between bg-slate-100/50 py-1 rounded-b-md md:py-4">
       <div>
-        <Link to="/" className="text-2xl ml-1 md:text-3xl">
+        <Link to="/" className="text-2xl ml-1 md:text-3xl ">
           Gustavo Garcia
         </Link>
       </div>
@@ -32,16 +38,10 @@ function Navbar() {
           />
         </svg>
       </button>
-      <div
-        className={`${
-          showBtn
-            ? "fixed top-14 -right-20 transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 md:static"
-            : " transition-all durantion-1000 ease-in-out text-base flex flex-col absolute right-0 top-12 py-10 bg-slate-100/50 px-7 rounded-b-md"
-        }`}
-      >
-        <ul className="md:flex md:gap-8 md:mr-11 md:text-xl">
+      <div className={`${hidenav()}`}>
+        <ul className="md:flex md:gap-8 md:mr-11 md:text-xl ">
           <Link to="/">
-            <li className="mb-2 hover:text-cyan-700">Home</li>
+            <li className="mb-2 hover:text-cyan-700 ">Home</li>
           </Link>
 
           <Link to="/projects">
