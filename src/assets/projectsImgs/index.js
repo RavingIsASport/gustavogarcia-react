@@ -38,6 +38,13 @@ let ProjectsData = [
       "A small website I created for a client to show off and help sell animals right from their ranch. This is my actually the first website I created for a client. This project help me understand React and React-Router which are the technologies I used, as well as Tailwind CSS.",
     url: `https://www.mariposasranch.com/`,
   },
+  {
+    project: require("../projectsImgs/BlogPost.png"),
+    name: "Post Blog",
+    description:
+      "A minimal thought posting web app for people to share their thoughts. This application was a good training excercise to practice NodeJS and Express for http requests. I also used HandlebarsJS for my template engine. Mysql and Sequelize are the database and ORM used to save data and find the data. This project is deployed on Heroku with JawsDB.",
+    url: `https://justsayit.herokuapp.com/`,
+  },
 ];
 
 export default ProjectsData;
