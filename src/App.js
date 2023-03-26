@@ -6,7 +6,7 @@ import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="relative bg-gradient-to-r from-lime-500 to-cyan-300 h-full">
+    <div className="relative bg-[#06B6D4] h-full">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

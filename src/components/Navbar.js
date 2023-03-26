@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const linkStyle =
+    "mb-4 bg-[#FFE9CF] p-1 rounded-full text-center shadow-md shadow-[#91705A] hover:shadow-none md:bg-transparent md:shadow-none md:border-b-2 md:border-b-[#FFE9CF] md:hover:text-[#FFE9CF] md:rounded-none";
+
   const [showBtn, setBtn] = useState(true);
 
   function handleClick() {
@@ -12,24 +15,30 @@ function Navbar() {
   function hidenav() {
     return showBtn
       ? "fixed top-14 -right-20 transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 md:static"
-      : " transition-all durantion-1000 ease-in-out text-base flex flex-col absolute right-0 top-12 py-10 bg-slate-100/50 px-7 rounded-b-md";
+      : " transition-all durantion-1000 ease-in-out text-base flex flex-col absolute right-0 top-11 py-5 px-4 rounded-b-md";
   }
 
   return (
-    <nav className="flex justify-between bg-slate-100/50 py-1 rounded-b-md md:py-4">
+    <nav className="font-mono flex justify-between  pt-3 rounded-b-md md:py-4">
       <div>
-        <Link to="/" className="text-2xl ml-1 md:text-3xl ">
-          Gustavo Garcia
+        <Link
+          to="/"
+          className="text-xl ml-1 md:text-3xl font-thin border-b-2 border-b-[#FFE9CF]"
+        >
+          {"<>"}Gustavo Garcia{"</>"}
         </Link>
       </div>
-      <button className="md:hidden mr-2" onClick={handleClick}>
+      <button
+        className="md:hidden mr-2 bg-[#FFE9CF] rounded-full p-2 shadow-md shadow-[#91705A] hover:shadow-none"
+        onClick={handleClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-10 h-10"
+          className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
@@ -39,17 +48,17 @@ function Navbar() {
         </svg>
       </button>
       <div className={`${hidenav()}`}>
-        <ul className="md:flex md:gap-8 md:mr-11 md:text-xl ">
+        <ul className="md:flex md:gap-8 md:mr-11 md:text-base text-xs">
           <Link to="/">
-            <li className="mb-2 hover:text-cyan-700 ">Home</li>
+            <li className={`${linkStyle}`}>Home</li>
           </Link>
 
           <Link to="/projects">
-            <li className="mb-2 hover:text-cyan-700">Projects</li>
+            <li className={`${linkStyle}`}>Projects</li>
           </Link>
 
           <Link to="/contact">
-            <li className="hover:text-cyan-700">Contact</li>
+            <li className={`${linkStyle}`}>Contact</li>
           </Link>
         </ul>
       </div>

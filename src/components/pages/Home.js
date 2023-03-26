@@ -13,7 +13,7 @@ export default function Home() {
         ></img>
       </div>
 
-      <div className="md:w-2/4 md:mx-auto bg-slate-100/60 rounded-xl px-8 py-4 md:px-8 tracking-tight text-center">
+      <div className=" bg-[#FFE9CF] rounded-xl m-5 px-8 py-4 tracking-tight text-center md:w-2/4 md:mx-auto">
         <p className="text-sm font-mono md:text-base">
           Certified Full Stack Web Developer from SMU Coding Bootcamp. My
           programming language of choice is Javascript, but also know Python.
@@ -30,7 +30,7 @@ export default function Home() {
         >
           <button
             type="button"
-            className="m-3 p-2 bg-cyan-600 hover:bg-cyan-300 hover:text-slate-700 rounded-lg text-slate-200"
+            className="m-3 p-2 bg-[#802B00] hover:bg-[#fca5a5] hover:text-slate-700 rounded-lg text-slate-200"
           >
             Resume
           </button>
