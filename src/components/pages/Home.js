@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/gustavoresume.pdf";
+import resume from "../../../public/resume/gustavoresume.pdf";
 import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
