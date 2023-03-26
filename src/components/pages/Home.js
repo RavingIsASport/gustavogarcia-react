@@ -22,19 +22,19 @@ export default function Home() {
           work in the food industry but I've decided to take a different career
           path, and jump into the programming industry.
         </p>
-        <button
-          type="button"
-          className="m-3 p-2 bg-cyan-600 hover:bg-cyan-300 hover:text-slate-700 rounded-lg text-slate-200"
+        <a
+          className="text-md font-medium"
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
         >
-          <a
-            className="text-md font-medium"
-            href={resume}
-            target="_blank"
-            rel="noreferrer"
+          <button
+            type="button"
+            className="m-3 p-2 bg-cyan-600 hover:bg-cyan-300 hover:text-slate-700 rounded-lg text-slate-200"
           >
             Resume
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   );
