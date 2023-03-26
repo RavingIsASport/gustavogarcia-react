@@ -26,11 +26,14 @@ export default function Home() {
           type="button"
           className="m-3 p-2 bg-cyan-600 hover:bg-cyan-300 hover:text-slate-700 rounded-lg text-slate-200"
         >
-          <object>
-            <a className="text-md font-medium" href={resume}>
-              Resume
-            </a>
-          </object>
+          <a
+            className="text-md font-medium"
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
         </button>
       </div>
     </div>
