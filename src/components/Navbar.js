@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const linkStyle =
-    "mb-4 bg-[#FFE9CF] p-1 rounded-full text-center shadow-md shadow-[#91705A] hover:shadow-none md:bg-transparent md:shadow-none md:border-b-2 md:border-b-[#FFE9CF] md:hover:text-[#FFE9CF] md:rounded-none";
+    "mb-4 bg-champagne p-1 rounded-full text-center shadow-md shadow-chamoisee hover:shadow-none md:bg-transparent md:shadow-none md:border-b-2 md:border-b-champagne md:hover:text-champagne md:rounded-none";
 
   const [showBtn, setBtn] = useState(true);
 
@@ -23,13 +23,13 @@ function Navbar() {
       <div>
         <Link
           to="/"
-          className="text-xl ml-1 md:text-3xl font-thin border-b-2 border-b-[#FFE9CF]"
+          className="text-xl ml-1 md:text-2xl font-thin border-b-2 border-b-champagne"
         >
           {"<>"}Gustavo Garcia{"</>"}
         </Link>
       </div>
       <button
-        className="md:hidden mr-2 bg-[#FFE9CF] rounded-full p-2 shadow-md shadow-[#91705A] hover:shadow-none"
+        className="md:hidden mr-2 bg-champagne rounded-full p-2 shadow-md shadow-chamoisee hover:shadow-none"
         onClick={handleClick}
       >
         <svg

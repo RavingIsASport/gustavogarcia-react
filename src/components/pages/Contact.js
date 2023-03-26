@@ -43,14 +43,14 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-2 w-9/12 mx-auto md:mt-24 md:w-5/12 lg:w-4/12 xl:w-3/12 flex flex-col">
+      <div className="mt-2 w-9/12 mx-auto md:mt-24 md:w-5/12 lg:w-4/12 xl:w-3/12 flex flex-col bg-champagne p-2 rounded shadow shadow-black">
         <h1 className="text-center text-lg lg:text-xl">Send a message</h1>
         <form className="flex flex-col gap-2" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input
             type="text"
             name="user_name"
-            className="rounded focus:outline-slate-100 p-2 text-sm"
+            className="rounded focus:outline-none p-2 text-sm"
           />
           <label>Email</label>
           <input
@@ -66,7 +66,7 @@ export default function Contact() {
           <button
             type="submit"
             value="Send"
-            className="bg-emerald-100 ml-auto px-3 py-1 rounded mt-2 border-slate-800 border hover:bg-emerald-300"
+            className="bg-celeste ml-auto px-3 py-1 rounded mt-2 border-slate-800 border hover:bg-cerulean"
           >
             Send
           </button>
