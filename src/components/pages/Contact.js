@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <div className="h-screen flex flex-col gap-24 md:gap-0 md:flex-row md:justify-between">
-      <div className="flex flex-col mx-auto gap-3 lg:gap-10 mt-2 md:mt-24">
+      <div className="flex flex-col mx-auto gap-3 lg:gap-10 mt-6 md:mt-24">
         <h1 className="text-center text-lg lg:text-xl">Socials</h1>
 
         <div className="flex gap-4 lg:gap-8">
@@ -43,30 +43,36 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-2 w-9/12 mx-auto md:mt-24 md:w-5/12 lg:w-4/12 xl:w-3/12 flex flex-col bg-champagne p-2 rounded shadow shadow-black">
-        <h1 className="text-center text-lg lg:text-xl">Send a message</h1>
-        <form className="flex flex-col gap-2" ref={form} onSubmit={sendEmail}>
+      <div className="mt-2 md:h-2/3 w-9/12 mx-auto md:mt-24 md:w-5/12 lg:w-4/12 xl:w-3/12 flex flex-col bg-gray-700 p-2 md:p-4 rounded ">
+        <h1 className="text-center text-base lg:text-xl font-mono">
+          Send a message
+        </h1>
+        <form
+          className="flex flex-col gap-2 text-sm"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <label>Name</label>
           <input
             type="text"
             name="user_name"
-            className="rounded focus:outline-none p-2 text-sm"
+            className="rounded focus:outline-none p-2 text-xs text-gray-900"
           />
           <label>Email</label>
           <input
             type="email"
             name="user_email"
-            className="rounded focus:outline-none p-2 text-sm"
+            className="rounded focus:outline-none p-2 text-xs text-gray-900"
           />
           <label>Message</label>
           <textarea
             name="user_message"
-            className="rounded resize-none focus:outline-none p-2 h-32 text-sm"
+            className="rounded resize-none focus:outline-none p-2 h-32 text-xs text-gray-900"
           />
           <button
             type="submit"
             value="Send"
-            className="bg-celeste ml-auto px-3 py-1 rounded mt-2 border-slate-800 border hover:bg-cerulean"
+            className="bg-red-500 ml-auto px-3 py-1 rounded mt-2 text-base border-slate-800 border hover:bg-red-700"
           >
             Send
           </button>

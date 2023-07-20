@@ -1,19 +1,32 @@
 import React from "react";
-import resume from "../../resume/gustavoresume.pdf";
+import resume from "../../resume/GustavosResume2023.pdf";
 import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 h-screen pt-8">
-      <div className="flex justify-center">
-        <img
-          src={picture}
-          className="w-40 md:w-56 rounded-full"
-          alt="Gustavo Garcia"
-        ></img>
+    <div className="grid grid-rows-1 items-center gap-8 pt-5">
+      <div className="flex flex-wrap justify-center md:grid md:grid-rows-1 gap-3 md:gap-4 mt-12 md:mt-6 mx-5 rounded p-4">
+        <div id="nameG" className="text-5xl md:text-7xl mr-auto font-mono">
+          <h1 className="">Gustavo</h1>
+          <h1>Garcia</h1>
+        </div>
+        <div className="ml-auto">
+          <img
+            src={picture}
+            className="w-32 md:w-56 rounded-full"
+            alt="Gustavo Garcia"
+          ></img>
+        </div>
+        <div className="my-3 mr-auto md:mr-0">
+          <p className="text-sm md:text-lg">
+            Certified Full Stack Web Developer from Dallas, TX.
+          </p>
+        </div>
       </div>
-
-      <div className=" bg-champagne rounded-xl m-5 px-8 py-4 tracking-tight text-center md:w-2/4 md:mx-auto">
+      <div className="text-lg flex justify-center m-auto md:text-4xl">
+        <h3>Full Stack Web Developement</h3>
+      </div>
+      <div className=" bg-gray-400 text-gray-900 rounded-xl m-5 px-8 py-4 tracking-tight text-center md:w-2/4 md:mx-auto">
         <p className="text-sm font-mono md:text-base">
           Certified Full Stack Web Developer from SMU Coding Bootcamp. My
           programming language of choice is Javascript, but also know Python.
@@ -22,14 +35,13 @@ export default function Home() {
           work in the food industry but I've decided to take a different career
           path, and jump into the programming industry.
         </p>
-        {/* <a className="text-md " href={resume} target="_blank" rel="noreferrer">
-          <button
-            type="button"
-            className="m-3 p-2 bg-sienna hover:bg-chamoisee text-slate-100 hover:text-slate-800 rounded-lg "
-          >
-            Resume
-          </button>
-        </a> */}
+        <div className="mr-auto">
+          <a href={resume}>
+            <button className="bg-red-500 p-1 rounded-md hover:bg-red-700 font-mono">
+              Resume
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
