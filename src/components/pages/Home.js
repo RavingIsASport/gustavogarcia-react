@@ -35,8 +35,8 @@ export default function Home() {
           work in the food industry but I've decided to take a different career
           path, and jump into the programming industry.
         </p>
-        <div className="mr-auto">
-          <a href={resume}>
+        <div className="mr-auto m-4">
+          <a href={resume} rel="norefrerr" target="_blank">
             <button className="bg-red-500 p-1 rounded-md hover:bg-red-700 font-mono">
               Resume
             </button>
