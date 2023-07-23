@@ -1,5 +1,4 @@
 import React from "react";
-// import resume from "../../assets/resume/GustavosResume2023.pdf";
 import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
@@ -38,6 +37,7 @@ export default function Home() {
         <div className="mr-auto m-4">
           <a
             href={`${process.env.PUBLIC_URL}/resume/GustavosResume2023.pdf`}
+            without
             rel="noopener noreferrer"
             target="_blank"
           >
