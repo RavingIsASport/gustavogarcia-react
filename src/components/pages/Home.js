@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/resume/GustavosResume2023.pdf";
+// import resume from "../../assets/resume/GustavosResume2023.pdf";
 import picture from "../../assets/gusGarcia.jpg";
 
 export default function Home() {
@@ -36,7 +36,11 @@ export default function Home() {
           path, and jump into the programming industry.
         </p>
         <div className="mr-auto m-4">
-          <a href={resume} rel="noreferrer" target="_blank">
+          <a
+            href={`${process.env.PUBLIC_URL}/resume/GustavosResume2023.pdf`}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <button
               type="button"
               className="bg-red-500 p-1 rounded-md hover:bg-red-700 font-mono"
