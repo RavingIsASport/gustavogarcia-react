@@ -36,13 +36,13 @@ export default function Home() {
           path, and jump into the programming industry.
         </p>
         <div className="mr-auto m-4">
-          <a
-            href={`/static/media/GustavosResume2023.fe659a583659e8b2a689.pdf`}
-            rel="norefrerr"
-            target="_blank"
-            className="bg-red-500 p-1 rounded-md hover:bg-red-700 font-mono"
-          >
-            Resume
+          <a href={resume} rel="noreferrer" target="_blank">
+            <button
+              type="button"
+              className="bg-red-500 p-1 rounded-md hover:bg-red-700 font-mono"
+            >
+              Resume
+            </button>
           </a>
         </div>
       </div>
