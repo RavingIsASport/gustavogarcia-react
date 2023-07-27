@@ -60,7 +60,7 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-4 justify-center py-5 bg-gray-100">
         <div className="m-auto">
           <h3 className="text-gray-900 text-lg md:text-3xl font-medium font-mono tracking-tighter mb-6">
-            Full Stack Web Developement
+            Full Stack Web Development
           </h3>
         </div>
         <h1 className="m-auto text-red-500 font-mono tracking-tighter text-lg md:text-2xl">
@@ -93,14 +93,15 @@ export default function Home() {
         </div>
       </div>
       {/* third container */}
-      <div className=" bg-gray-400 text-gray-900 rounded-xl m-5 px-8 py-4 tracking-tight text-center md:w-2/4 md:mx-auto">
+      <div className="flex flex-wrap gap-4 p-4">
+        <h1 className="text-gray-200 font-mono text-lg font-semibold">
+          About Me
+        </h1>
         <p className="text-sm font-mono tracking-tighter md:text-base">
-          Certified Full Stack Web Developer from SMU Coding Bootcamp. My
-          programming language of choice is Javascript, but also know Python.
-          With Javascript I use NodeJS for my backend, MangoDb as my database,
-          Mongoose as my ORM, and React takes care of my front end. I currently
-          work in the food industry but I've decided to take a different career
-          path, and jump into the programming industry.
+          Certified Full Stack Web Developer from SMU Coding Bootcamp. I've been
+          programming since about 2020, and have been in love with it ever
+          since. My preferred language is javascript, but I practice with Python
+          as well. While I'm not coding I really enjoy
         </p>
       </div>
     </div>

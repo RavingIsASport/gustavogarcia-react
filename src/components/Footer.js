@@ -11,6 +11,7 @@ export default function Footer() {
         <p className="text-gray-900 font-light text-sm">
           Full Stack Web Developer
         </p>
+        <p className="text-red-900 font-extralight">Se habla español.</p>
       </div>
 
       <Link to="/contact">
