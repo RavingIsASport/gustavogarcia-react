@@ -101,7 +101,8 @@ export default function Home() {
           Certified Full Stack Web Developer from SMU Coding Bootcamp. I've been
           programming since about 2020, and have been in love with it ever
           since. My preferred language is javascript, but I practice with Python
-          as well. While I'm not coding I really enjoy
+          as well. While I'm not coding I really enjoy gaming, working out, and
+          making music.
         </p>
       </div>
     </div>
