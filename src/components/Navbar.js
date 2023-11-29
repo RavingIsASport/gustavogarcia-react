@@ -12,12 +12,6 @@ function Navbar() {
     console.log("succes");
   }
 
-  function hidenav() {
-    return showBtn
-      ? "fixed top-14 -right-20 transition-all durantion-1000 ease-in-out text-xl flex flex-col gap-5 md:static"
-      : " transition-all durantion-1000 ease-in-out text-base flex flex-col absolute right-0 top-11 py-5 px-4 rounded-b-md";
-  }
-
   return (
     <nav className="font-mono flex justify-between pt-3 rounded-b-md md:py-4">
       <div className="mt-2">
@@ -47,21 +41,23 @@ function Navbar() {
           />
         </svg>
       </button>
-      <div className={`${hidenav()}`}>
-        <ul className="md:flex md:gap-8 md:mr-11 md:text-base text-xs">
-          <Link to="/">
-            <li className={`${linkStyle}`}>Home</li>
-          </Link>
+      <ul
+        className={`${
+          showBtn ? "-right-24 " : " right-0 "
+        } flex flex-col text-xs fixed top-11 py-5 px-4 rounded-b-md md:right-0 md:flex-row md:top-0 md:gap-8 md:text-base md:absolute transition-all durantion-1000 ease-in-out`}
+      >
+        <Link onClick={handleClick} to="/" className={`${linkStyle}`}>
+          Home
+        </Link>
 
-          <Link to="/projects">
-            <li className={`${linkStyle}`}>Projects</li>
-          </Link>
+        <Link onClick={handleClick} to="/projects" className={`${linkStyle}`}>
+          Projects
+        </Link>
 
-          <Link to="/contact">
-            <li className={`${linkStyle}`}>Contact</li>
-          </Link>
-        </ul>
-      </div>
+        <Link onClick={handleClick} to="/contact" className={`${linkStyle}`}>
+          Contact
+        </Link>
+      </ul>
     </nav>
   );
 }

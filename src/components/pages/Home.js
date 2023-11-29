@@ -93,11 +93,11 @@ export default function Home() {
         </div>
       </div>
       {/* third container */}
-      <div className="flex flex-wrap gap-4 p-4">
-        <h1 className="text-gray-200 font-mono text-lg font-semibold">
+      <div className="flex flex-wrap gap-4 p-8 md:px-64 md:py-20">
+        <h1 className="text-red-300 font-mono text-lg font-semibold md:text-2xl">
           About Me
         </h1>
-        <p className="text-sm font-mono tracking-tighter md:text-base">
+        <p className="text-xs font-mono tracking-tighter md:text-lg">
           Certified Full Stack Web Developer from SMU Coding Bootcamp. I've been
           programming since about 2020, and have been in love with it ever
           since. My preferred language is javascript, but I practice with Python
