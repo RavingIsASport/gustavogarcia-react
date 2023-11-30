@@ -43,8 +43,8 @@ function Navbar() {
       </button>
       <ul
         className={`${
-          showBtn ? "-right-24 " : " right-0 "
-        } flex flex-col text-xs fixed top-11 py-5 px-4 rounded-b-md md:right-0 md:flex-row md:top-0 md:gap-8 md:text-base md:absolute transition-all durantion-1000 ease-in-out`}
+          showBtn ? "-right-24 fixed" : " right-0 absolute"
+        } flex flex-col text-xs  top-11 py-5 px-4 rounded-b-md md:right-0 md:flex-row md:top-0 md:gap-8 md:text-base md:absolute transition-all durantion-1000 ease-in-out`}
       >
         <Link onClick={handleClick} to="/" className={`${linkStyle}`}>
           Home
