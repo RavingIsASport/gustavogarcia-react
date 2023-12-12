@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const linkStyle =
-    "mb-4 bg-red-500 text-gray-200 p-1 rounded-full text-center md:bg-transparent md:border-b-2 md:border-b-red-500 md:hover:border-b-gray-400 md:hover:text-red-500 md:rounded-none";
+    "mb-4 bg-red-500 text-gray-200 p-2 rounded-full text-center hover:bg-red-400 md:bg-transparent md:border-b-2 md:border-b-red-500 md:hover:border-b-gray-400 md:hover:text-red-500 md:rounded-none md:p-1 md:hover:bg-transparent";
 
   const [showBtn, setBtn] = useState(true);
 
@@ -13,17 +13,17 @@ function Navbar() {
   }
 
   return (
-    <nav className="font-mono flex justify-between pt-3 rounded-b-md md:py-4">
+    <nav className="flex justify-between pt-3 rounded-b-md md:py-4">
       <div className="mt-2">
         <Link
           to="/"
-          className="text-md ml-2 md:text-xl font-thin border-b-2 border-b-red-500"
+          className="font-NovaSquare text-md ml-2 md:text-xl font-thin border-b-2 border-b-red-500"
         >
           {"<>"}Gustavo Garcia{"</>"}
         </Link>
       </div>
       <button
-        className="md:hidden mr-2 bg-red-500 hover:bg-red-700 rounded-md p-1"
+        className="md:hidden mr-2 bg-red-500 hover:bg-red-400 rounded-md p-1"
         onClick={handleClick}
       >
         <svg
