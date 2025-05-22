@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-black via-gray-900 to-red-950 py-20 text-gray-100">
+      <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-red-950 py-20 text-gray-100">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-6">
           {/* Left: Text */}
           <div className="flex-1 text-center md:text-left">
