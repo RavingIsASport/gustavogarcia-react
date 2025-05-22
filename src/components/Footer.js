@@ -1,24 +1,27 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="static bg-gray-300 py-5 px-2">
-      <div className="py-2">
-        <p className="text-gray-900 font-mono text-base">
+    <footer className="bg-gray-800 text-gray-300 py-8 px-4">
+      <div className="max-w-5xl mx-auto text-center space-y-2">
+        <p className="text-red-500 font-NovaSquare text-xl tracking-tight">
           {"<>"}Gustavo Garcia{"</>"}
         </p>
-        <p className="text-gray-900 font-light text-sm">
+        <p className="font-Jost text-sm text-gray-400">
           Full Stack Web Developer
         </p>
-        <p className="text-red-900 font-extralight">Se habla español.</p>
-      </div>
+        <p className="text-red-400 text-xs">Se habla español.</p>
 
-      <Link to="/contact">
-        <button className="border-solid border border-red-500 p-2 my-2 font-mono text-xs text-gray-600 hover:bg-slate-100">
-          Contact Me
-        </button>
-      </Link>
-    </div>
+        <Link to="/contact">
+          <button className="mt-4 inline-block border border-red-500 text-red-400 hover:text-white hover:bg-red-500 transition px-4 py-2 text-sm rounded-md font-mono">
+            Contact Me
+          </button>
+        </Link>
+
+        <div className="pt-4 text-xs text-gray-500">
+          &copy; {new Date().getFullYear()} Gustavo Garcia. All rights reserved.
+        </div>
+      </div>
+    </footer>
   );
 }
