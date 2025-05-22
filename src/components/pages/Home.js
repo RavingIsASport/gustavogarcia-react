@@ -60,7 +60,7 @@ export default function Home() {
               web experiences.
             </p>
             <a
-              href={`${process.env.PUBLIC_URL}/resume/GustavosResume2023.pdf`}
+              href={`${process.env.PUBLIC_URL}/resume/GustavoGarResume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-lg font-Asap text-lg font-semibold shadow-md transition duration-200"
