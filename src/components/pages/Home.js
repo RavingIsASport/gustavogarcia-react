@@ -1,4 +1,5 @@
 import picture from "../../assets/gusGarcia.jpg";
+import projects from "../../assets/projectsImgs/index.js"; // Assuming you have a JSON file with your projects
 import {
   SiJavascript,
   SiHtml5,
@@ -10,7 +11,7 @@ import {
   SiExpress,
   SiHandlebarsdotjs,
   SiAmazonaws,
-  SiNextdotjs,
+  SiAngular,
   SiMongodb,
   SiMysql,
 } from "react-icons/si";
@@ -18,24 +19,6 @@ import { LiaNode } from "react-icons/lia";
 import { FaLaptopCode } from "react-icons/fa";
 
 // Example projects array (add your real projects)
-const projects = [
-  {
-    name: "My Portfolio Site",
-    description: "Personal website showcasing my work and skills.",
-    tech: "React, Tailwind, Netlify",
-    live: "https://yourportfolio.com",
-    github: "https://github.com/RavingIsASport/portfolio",
-    image: "/images/portfolio.png",
-  },
-  {
-    name: "E-commerce Demo",
-    description: "A full-stack demo e-commerce web app.",
-    tech: "React, Express, MongoDB",
-    live: "https://myecommerce.com",
-    github: "https://github.com/RavingIsASport/ecommerce-demo",
-    image: "/images/ecommerce.png",
-  },
-];
 
 export default function Home() {
   return (
@@ -80,44 +63,59 @@ export default function Home() {
       <section className="bg-gray-800 py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h3 className="text-3xl font-NovaSquare font-bold text-red-500 mb-10">
-            Featured Projects
+            Featured Work
           </h3>
           <div className="grid gap-8 sm:grid-cols-2">
-            {projects.map((proj) => (
-              <div
-                key={proj.name}
-                className="backdrop-blur bg-white/10 border border-red-900/30 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition transform p-5 flex flex-col"
-              >
-                <img
-                  src={proj.image}
-                  alt={proj.name}
-                  className="rounded-lg mb-4 h-40 object-cover border border-gray-700"
-                />
-                <h4 className="text-xl font-semibold text-red-400 mb-1">
-                  {proj.name}
-                </h4>
-                <p className="text-gray-200 mb-2">{proj.description}</p>
-                <p className="text-sm text-gray-400 mb-4">{proj.tech}</p>
-                <div className="mt-auto flex gap-4">
-                  <a
-                    href={proj.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-red-400 font-medium hover:underline"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={proj.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 font-medium hover:underline"
-                  >
-                    GitHub
-                  </a>
-                </div>
+            {/* project 1 */}
+            <div
+              key={projects[0].name}
+              className="backdrop-blur bg-white/10 border border-red-900/30 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition transform p-5 flex flex-col"
+            >
+              <img
+                src={projects[0].project}
+                className="rounded-lg mb-4 h-40 object-cover border border-gray-700"
+              />
+              <h4 className="text-xl font-semibold text-red-400 mb-1">
+                {projects[0].name}
+              </h4>
+              <p className="text-gray-200 mb-2">{projects[0].description}</p>
+
+              <div className="mt-auto flex gap-4">
+                <a
+                  href={projects[0].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 font-medium hover:underline"
+                >
+                  Live
+                </a>
               </div>
-            ))}
+            </div>
+            {/* project 2 */}
+            <div
+              key={projects[1].name}
+              className="backdrop-blur bg-white/10 border border-red-900/30 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition transform p-5 flex flex-col"
+            >
+              <img
+                src={projects[1].project}
+                className="rounded-lg mb-4 h-40 object-cover border border-gray-700"
+              />
+              <h4 className="text-xl font-semibold text-red-400 mb-1">
+                {projects[1].name}
+              </h4>
+              <p className="text-gray-200 mb-2">{projects[1].description}</p>
+
+              <div className="mt-auto flex gap-4">
+                <a
+                  href={projects[1].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 font-medium hover:underline"
+                >
+                  Live
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -156,7 +154,7 @@ export default function Home() {
                 <SiReact className="text-cyan-400" title="React" />
               </span>
               <span className="hover:scale-125 transition">
-                <SiNextdotjs className="text-white" title="Next.js" />
+                <SiAngular className="text-red-500" title="Angular" />
               </span>
               <span className="hover:scale-125 transition">
                 <SiTailwindcss className="text-teal-400" title="Tailwind CSS" />

@@ -1,26 +1,53 @@
-import React from "react";
 import ProjectsData from "../../assets/projectsImgs/index";
 
 export default function Projects() {
   return (
-    <>
-      <div className="grid grid-cols-1 text-gray-900 md:grid-cols-3 justify-items-center h-full ">
-        {ProjectsData.map((data) => (
-          <div className="bg-gray-300 m-8 p-2 rounded-md ">
-            <img src={data.project} className="" alt={data.name} />
-            <h1 className="text-lg font-mono">{data.name}</h1>
-            <p className="text-xs">{data.description}</p>
-            <div className="my-2">
-              <a
-                href={data.url}
-                className="text-gray-700 font-bold hover:text-red-400 border-b-2 border-b-red-500"
-              >
-                Deployed
-              </a>
+    <section className="bg-gradient-to-br from-white via-gray-50 to-red-50 py-20 px-6 min-h-screen">
+      <div className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <div className="w-20 h-1 bg-red-500 mb-4 rounded"></div>
+        <h2 className="text-3xl md:text-4xl font-NovaSquare text-gray-800 font-bold mb-4">
+          Projects
+        </h2>
+        <p className="text-gray-600 mb-12 font-Jost text-lg">
+          Creative and full-featured projects built using modern full stack
+          technologies.
+        </p>
+
+        {/* Project Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {ProjectsData.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                src={project.project}
+                alt={project.name}
+                className="w-full h-48 object-cover rounded-t-2xl"
+              />
+              <div className="p-6">
+                <h3 className="text-xl text-red-600 font-semibold font-Jost mb-1">
+                  {project.name}
+                </h3>
+                <p className="text-gray-700 text-sm mb-3">
+                  {project.description}
+                </p>
+                <div className="flex items-center justify-between text-sm">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-red-500 font-medium hover:underline"
+                  >
+                    Deployed
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </>
+    </section>
   );
 }
